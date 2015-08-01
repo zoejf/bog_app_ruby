@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Add A New Bog Creature</h1>
+
+        <%= form_for @creature do |f| %>
+          <%= f.text_field :name, class: "form-control" %><br>
+          <%= f.text_area :description, class: "form-control" %><br>
+          <%= f.submit "save creature", class:"btn btn-default" %><br>
+
+        <% end %>
+
+    </div>
+  </div>
+</div>

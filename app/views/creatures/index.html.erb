@@ -1,0 +1,13 @@
+
+<h1>Bog Creatures</h1>
+<% @creatures.each do |creature| %>
+
+  <div>
+    <strong>Name:</strong>  <%= creature.name %> <br>
+    <strong>Description:</strong>  <%= creature.description %> <br>
+    <a href="/creatures/<%= creature.id %>">Edit/See Details</a>
+    <br>
+    <br>
+  </div>
+
+<% end %>
