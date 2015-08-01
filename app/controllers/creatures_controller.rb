@@ -39,7 +39,7 @@ class CreaturesController < ApplicationController
     creature.update_attributes(updated_attributes)
 
     #redirect to show
-    redirect_to "/creatures/#{id}"
+    redirect_to "/creatures"
   end
 
   def destroy
