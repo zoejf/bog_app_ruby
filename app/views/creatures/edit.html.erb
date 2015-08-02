@@ -6,7 +6,8 @@
         <%= form_for @creature do |f| %>
           <%= f.text_field :name, class: "form-control" %><br>
           <%= f.text_area :description, class: "form-control" %><br>
-          <%= f.submit "Update Creature", class:"btn btn-default" %><br>
+ 
+          <%= button_to "Update", @creature, method: :patch, class: "btn btn-default" %><br>
         <% end %>
       </form>
     </div>

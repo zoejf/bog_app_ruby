@@ -1,16 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3" style="text-align:center">
+      <h1>Bog Creatures</h1>
+      <% @creatures.each do |creature| %>
 
-<h1>Bog Creatures</h1>
-<% @creatures.each do |creature| %>
+        <div>
+          <strong>Name:</strong>  <%= creature.name %> <br>
+          <strong>Description:</strong>  <%= creature.description %> <br>
+          <a href="/creatures/<%= creature.id %>">Edit/See Details</a>
+          <br>
+          <br>
+        </div>
 
-  <div>
-    <strong>Name:</strong>  <%= creature.name %> <br>
-    <strong>Description:</strong>  <%= creature.description %> <br>
-    <a href="/creatures/<%= creature.id %>">Edit/See Details</a>
-    <br>
-    <br>
+      <% end %>
+
+      <br>
+        <a href="/creatures/new" class="btn btn-success">Create New Creature</a>
+    </div>
   </div>
-
-<% end %>
-
-<br>
-  <a href="/creatures/new" class="btn btn-success">Create New Creature</a>
+</div>
